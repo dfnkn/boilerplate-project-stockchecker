@@ -1,0 +1,20 @@
+version: '3.3'
+services:
+  mongo:
+    ports:
+      - '127.0.0.1:27017:27017'
+    container_name: 'mongo1'
+    restart: always
+    logging:
+      options:
+        max-size: 1G
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=<umser>
+      - MONGO_INITDB_ROOT_PASSWORD=<pass>
+    image: mongo
+    volumes:
+      - data1:/data/db
+
+volumes:
+  data1:
+    external: false
