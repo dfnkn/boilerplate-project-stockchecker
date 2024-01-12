@@ -1,10 +1,10 @@
 {
 	"name": "boilerplate-project-stockchecker",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "InfoSec project for freeCodeCamp",
 	"scripts": {
-		"start": "node server.js &&  bash ./tests/query.sh",
-		"test": "jest --runTestsByPath ./handlers/stockprice.handler.spec.js --watch"
+		"start": "node server.js",
+		"test": "jest"
 	},
 	"dependencies": {
 		"@types/jest": "^29.5.11",
@@ -23,7 +23,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/freeCodeCamp/boilerplate-project-stockchecker"
+		"url": "https://github.com/dfnkn/boilerplate-project-stockchecker"
 	},
 	"keywords": [
 		"node",
